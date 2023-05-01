@@ -21,3 +21,7 @@ function rollDice() {
   dice2Img.src = `/Black Dice/dice${dice2Val}.svg`;
   dice2Img.alt = `Dice ${dice2Val}`;
 }
+
+$("a").click(function(){
+  alert('You clicked me!');
+});
