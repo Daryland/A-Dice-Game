@@ -11,20 +11,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow: scroll;
   margin: 0;
   padding: 20px;
 }
 
-h1 {font-size: 100px;}
+h1 {font-size: 50px;}
 p {font-size: 25px;}
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50%;
 }
 
 .roll-count {
@@ -45,31 +54,46 @@ p {font-size: 25px;}
 
 .dice {
   display: flex;
-  flex-wrap: wrap;
   margin: 20px;
   padding: 20px;
   gap: 50px;
   text-align: center;
 }
+
 .input-1 {
   text-align: center;
   font-size: 25px;
+  width: 50%;
 }
 .input-2 {
   text-align: center;
   font-size: 25px;
+  width: 50%;
+}
+
+.dice-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dice-left{
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .dice-right {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -79,3 +103,28 @@ p {font-size: 25px;}
   font-weight: 700;
   box-shadow: 2px 2px 2px black;
 }
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+   .dice-image {
+    width: 25px;
+   }
+  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+   ... 
+  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+   ... 
+  }
