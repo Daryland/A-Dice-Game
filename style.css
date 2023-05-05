@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   overflow: scroll;
   margin: 0;
   padding: 20px;
@@ -97,7 +98,7 @@ p {font-size: 25px;}
 }
 
 .btn {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 20px;
   font-weight: 700;
@@ -117,11 +118,16 @@ p {font-size: 25px;}
    .dice-image {
     width: 25px;
    }
+   .btn {
+    width: 25vh;
+   }
   }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-   ... 
+   .btn {
+    width: 25vh;
+   }
   }
 
 /* Large devices (large desktops, 1200px and up) */
